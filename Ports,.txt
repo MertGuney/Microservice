@@ -4,4 +4,6 @@ Services -> PhotoStockApi -> http://localhost:5012
 
 Services -> BasketApi -> http://localhost:5013
 
+Services -> DiscountApi -> http://localhost:5014 (MongoDb Kullanmak Daha mantýklý)
+
 IdentityServer -> IdentityApi -> http://localhost:5001
