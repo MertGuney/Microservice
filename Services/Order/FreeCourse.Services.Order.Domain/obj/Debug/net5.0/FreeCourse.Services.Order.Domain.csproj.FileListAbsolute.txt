@@ -1,0 +1,15 @@
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\bin\Debug\net5.0\FreeCourse.Services.Order.Domain.deps.json
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\bin\Debug\net5.0\FreeCourse.Services.Order.Domain.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\bin\Debug\net5.0\FreeCourse.Services.Order.Domain.pdb
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.csproj.AssemblyReference.cache
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.AssemblyInfoInputs.cache
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.AssemblyInfo.cs
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.csproj.CoreCompileInputs.cache
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\refint\FreeCourse.Services.Order.Domain.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.pdb
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\ref\FreeCourse.Services.Order.Domain.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\bin\Debug\net5.0\FreeCourse.Services.Order.Domain.Core.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\bin\Debug\net5.0\FreeCourse.Services.Order.Domain.Core.pdb
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Order\FreeCourse.Services.Order.Domain\obj\Debug\net5.0\FreeCourse.Services.Order.Domain.csproj.CopyComplete
