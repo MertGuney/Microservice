@@ -8,4 +8,6 @@ Services -> DiscountApi -> http://localhost:5014 (MongoDb Kullanmak Daha mantýkl
 
 Services -> OrderApi -> http://localhost:5015
 
+Services -> FakePaymentApi -> http://localhost:5016
+
 IdentityServer -> IdentityApi -> http://localhost:5001
