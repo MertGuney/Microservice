@@ -20,6 +20,7 @@ namespace FreeCourse.IdentityServer
             new ApiResource("resource_discount"){Scopes={"discount_fullpermission"}},
             new ApiResource("resource_order"){Scopes={"order_fullpermission"}},
             new ApiResource("resource_fake_payment"){Scopes={"fake_payment_fullpermission"}},
+            new ApiResource("resource_gateway"){Scopes={"gateway_fullpermission"}},
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -41,6 +42,7 @@ namespace FreeCourse.IdentityServer
                 new ApiScope("discount_fullpermission","Discount Api için full erişim"),
                 new ApiScope("order_fullpermission","Order Api için full erişim"),
                 new ApiScope("fake_payment_fullpermission","FakePayment Api için full erişim"),
+                new ApiScope("gateway_fullpermission","Gateway Api için full erişim"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)// kendisi
             };
 
@@ -53,7 +55,7 @@ namespace FreeCourse.IdentityServer
                     ClientName="AspNet Core MVC",
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ClientCredentials,
-                    AllowedScopes={ "catalog_fullpermission", "photo_stock_fullpermission",IdentityServerConstants.LocalApi.ScopeName }
+                    AllowedScopes={ "gateway_fullpermission","catalog_fullpermission", "photo_stock_fullpermission",IdentityServerConstants.LocalApi.ScopeName }
                 },
                 new Client
                 {
@@ -62,7 +64,7 @@ namespace FreeCourse.IdentityServer
                     AllowOfflineAccess=true,//refresh token aktif et
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
-                    AllowedScopes={ "fake_payment_fullpermission", "order_fullpermission", "discount_fullpermission","basket_fullpermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName, "roles" },
+                    AllowedScopes={ "gateway_fullpermission", "fake_payment_fullpermission", "order_fullpermission", "discount_fullpermission","basket_fullpermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName, "roles" },
                     AccessTokenLifetime=1*60*60,//1 saat
                     RefreshTokenExpiration=TokenExpiration.Absolute,// 61.gün refresh token ömrü biter
                     AbsoluteRefreshTokenLifetime=(int)(DateTime.Now.AddDays(60)-DateTime.Now).TotalSeconds,// 60 gün
