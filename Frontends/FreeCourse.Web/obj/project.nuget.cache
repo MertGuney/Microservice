@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Aqd11ckHZfnIOv+xAXWj30uoiqG9pF9WdPSu3O23OFl0cgRW8mHeqdurshaL3Kguudv4uw26ZJu3i5m4sRWVgQ==",
+  "success": true,
+  "projectFilePath": "D:\\Udemy\\MyUdemyWorks\\API-5.0\\Microservices\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mert_\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

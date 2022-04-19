@@ -13,3 +13,5 @@ Services -> FakePaymentApi -> http://localhost:5016
 IdentityServer -> IdentityApi -> http://localhost:5001
 
 IdentityServer -> GatewayApi -> http://localhost:5000
+
+Web -> http://localhost:5010
