@@ -26,10 +26,19 @@ namespace FreeCourse.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluþtursun
-            services.AddHttpContextAccessor();
             services.Configure<ClientSettings>(Configuration.GetSection("ClientSettings"));
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
+            services.AddHttpContextAccessor();
+
+            var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
+
+            services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluþtursun
+            services.AddHttpClient<IUserService, UserService>(opts =>
+            {
+                opts.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
+            });//benim için ilgili sýnýflar için http client nesnesi oluþtursun
+
+
 
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
