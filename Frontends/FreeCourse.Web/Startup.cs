@@ -1,3 +1,4 @@
+using FreeCourse.Web.Handlers;
 using FreeCourse.Web.Models;
 using FreeCourse.Web.Services;
 using FreeCourse.Web.Services.Interfaces;
@@ -32,11 +33,14 @@ namespace FreeCourse.Web
 
             var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
+            services.AddScoped<ResourceOwnerPasswordTokenHandler>();
+
             services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluþtursun
+            // user servisine delege olarak resourceownerpasswordtokenhandler sýnýfýný verdiðimizden dolayý userservice kullanýlan yerlere her istekte çalýþacak
             services.AddHttpClient<IUserService, UserService>(opts =>
             {
                 opts.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-            });//benim için ilgili sýnýflar için http client nesnesi oluþtursun
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();//benim için ilgili sýnýflar için http client nesnesi oluþtursun
 
 
 
