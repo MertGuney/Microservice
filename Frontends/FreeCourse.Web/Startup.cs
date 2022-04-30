@@ -1,3 +1,4 @@
+using FreeCourse.Shared.Services;
 using FreeCourse.Web.Handlers;
 using FreeCourse.Web.Models;
 using FreeCourse.Web.Services;
@@ -31,19 +32,23 @@ namespace FreeCourse.Web
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
             services.AddHttpContextAccessor();
 
+            services.AddAccessTokenManagement();//IClientAccessTokenCache DI nesnesi
+            services.AddScoped<ISharedIdentityService, SharedIdentityService>();
+            services.AddScoped<ResourceOwnerPasswordTokenHandler>();
+            services.AddScoped<ClientCredentialTokenHandler>();
+
             var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
-            services.AddScoped<ResourceOwnerPasswordTokenHandler>();
-
+            services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();//benim için ilgili sýnýflar için http client nesnesi oluþtursun
             services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluþtursun
-            // user servisine delege olarak resourceownerpasswordtokenhandler sýnýfýný verdiðimizden dolayý userservice kullanýlan yerlere her istekte çalýþacak
+            services.AddHttpClient<ICatalogService, CatalogService>(opts =>
+            {
+                opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
+            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();//CatalogService içeriðine her istek atýldýðýnda clientCredentialTokenHandler delegesi çalýþacak
             services.AddHttpClient<IUserService, UserService>(opts =>
             {
                 opts.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();//benim için ilgili sýnýflar için http client nesnesi oluþtursun
-
-
-
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();// user servisine delege olarak resourceownerpasswordtokenhandler sýnýfýný verdiðimizden dolayý userservice kullanýlan yerlere her istekte çalýþacak
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
             {

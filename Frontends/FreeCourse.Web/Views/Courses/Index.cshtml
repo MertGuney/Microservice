@@ -1,0 +1,50 @@
+﻿@model List<CourseViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Kurslar</h5>
+                <a asp-controller="Courses" asp-action="Create" class="btn btn-primary mb-3">Kurs Oluştur</a>
+                @if (Model.Any())
+                {
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <td>Resim</td>
+                                <td>Kurs Adı</td>
+                                <td>Kategori Adı</td>
+                                <td>Süre</td>
+                                <td>Ücret</td>
+                                <td>İşlemler</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td></td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Category.Name</td>
+                                    <td>@item.Feature.Duration</td>
+                                    <td>@item.Price</td>
+                                    <td><a asp-controller="Courses" asp-action="Update" asp-route-id="@item.Id" class="btn btn-success btn-small">Güncelle</a></td>
+                                    <td><a asp-controller="Courses" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-small">Sil</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <div class="alert alert-info">Kurs Bulunamadı</div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

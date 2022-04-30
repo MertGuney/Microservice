@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YPqRry6CvIPDPFwA2PfJLwzmGPylWg4uxTM1uauBS5dlSYB0khAtODLhxq5NuMSyshS+XC5wC6xhMQaaq7cKIg==",
+  "dgSpecHash": "TQWiuwButDjXJwP6hWOndgF9k6sHvcen8OUPNv80j0FDDP9Mt6pKeTs552ctn31JLFfuDfVQ4CC2XmY2E1vnIQ==",
   "success": true,
   "projectFilePath": "D:\\Udemy\\MyUdemyWorks\\API-5.0\\Microservices\\Frontends\\FreeCourse.Web\\FreeCourse.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mert_\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\mert_\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512",
+    "C:\\Users\\mert_\\.nuget\\packages\\identitymodel.aspnetcore\\3.0.0\\identitymodel.aspnetcore.3.0.0.nupkg.sha512",
+    "C:\\Users\\mert_\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",
     "C:\\Users\\mert_\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mert_\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\mert_\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",

@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[5.2.0, )"
             },
+            "IdentityModel.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.IdentityModel.Protocols.OpenIdConnect": {
               "target": "Package",
               "version": "[6.17.0, )"

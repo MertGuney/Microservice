@@ -125,3 +125,8 @@ D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\n
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Auth\SignIn.cshtml.g.cs
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Index.cshtml.g.cs
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\net5.0\IdentityModel.AspNetCore.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Create.cshtml.g.cs
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Courses\Update.cshtml.g.cs
