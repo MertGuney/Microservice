@@ -39,7 +39,11 @@
                         <input asp-for="Feature.Duration" class="form-control">
                         <span class="text-danger" asp-validation-for="Feature.Duration"></span>
                     </div>
-                    <h1>Resim Input</h1>
+                    <div class="mb-3">
+                        <label class="form-label" asp-for="PhotoFormFile"></label>
+                        <input class="form-control" type="file" asp-for="PhotoFormFile">
+                        <span class="text-danger" asp-validation-for="PhotoFormFile"></span>
+                    </div>
                     <button class="btn btn-primary" type="submit">Kurs Güncelle</button>
                 </form>
             </div>

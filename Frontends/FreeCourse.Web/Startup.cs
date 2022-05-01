@@ -1,5 +1,6 @@
 using FreeCourse.Shared.Services;
 using FreeCourse.Web.Handlers;
+using FreeCourse.Web.Helpers;
 using FreeCourse.Web.Models;
 using FreeCourse.Web.Services;
 using FreeCourse.Web.Services.Interfaces;
@@ -31,8 +32,8 @@ namespace FreeCourse.Web
             services.Configure<ClientSettings>(Configuration.GetSection("ClientSettings"));
             services.Configure<ServiceApiSettings>(Configuration.GetSection("ServiceApiSettings"));
             services.AddHttpContextAccessor();
-
             services.AddAccessTokenManagement();//IClientAccessTokenCache DI nesnesi
+            services.AddSingleton<PhotoHelper>();
             services.AddScoped<ISharedIdentityService, SharedIdentityService>();
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
             services.AddScoped<ClientCredentialTokenHandler>();
@@ -45,6 +46,10 @@ namespace FreeCourse.Web
             {
                 opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
             }).AddHttpMessageHandler<ClientCredentialTokenHandler>();//CatalogService içeriðine her istek atýldýðýnda clientCredentialTokenHandler delegesi çalýþacak
+            services.AddHttpClient<IPhotoStockService, PhotoStockService>(opts =>
+            {
+                opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.PhotoStock.Path}");
+            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();//PhotoStockService içeriðine her istek atýldýðýnda clientCredentialTokenHandler delegesi çalýþacak
             services.AddHttpClient<IUserService, UserService>(opts =>
             {
                 opts.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
