@@ -1,4 +1,5 @@
 using FreeCourse.Shared.Services;
+using FreeCourse.Web.Extensions;
 using FreeCourse.Web.Handlers;
 using FreeCourse.Web.Helpers;
 using FreeCourse.Web.Models;
@@ -38,22 +39,7 @@ namespace FreeCourse.Web
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
             services.AddScoped<ClientCredentialTokenHandler>();
 
-            var serviceApiSettings = Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
-
-            services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();//benim için ilgili sýnýflar için http client nesnesi oluþtursun
-            services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluþtursun
-            services.AddHttpClient<ICatalogService, CatalogService>(opts =>
-            {
-                opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
-            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();//CatalogService içeriðine her istek atýldýðýnda clientCredentialTokenHandler delegesi çalýþacak
-            services.AddHttpClient<IPhotoStockService, PhotoStockService>(opts =>
-            {
-                opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.PhotoStock.Path}");
-            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();//PhotoStockService içeriðine her istek atýldýðýnda clientCredentialTokenHandler delegesi çalýþacak
-            services.AddHttpClient<IUserService, UserService>(opts =>
-            {
-                opts.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();// user servisine delege olarak resourceownerpasswordtokenhandler sýnýfýný verdiðimizden dolayý userservice kullanýlan yerlere her istekte çalýþacak
+            services.AddHttpClientServices(Configuration);
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, opts =>
             {
@@ -72,6 +58,7 @@ namespace FreeCourse.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
             else
             {

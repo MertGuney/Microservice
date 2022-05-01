@@ -1,5 +1,6 @@
 ﻿using FreeCourse.Services.Basket.DTOs;
 using FreeCourse.Shared.DTOs;
+using System;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -23,7 +24,7 @@ namespace FreeCourse.Services.Basket.Services
         public async Task<Response<BasketDTO>> GetBasket(string userId)
         {
             var existBasket = await _redisService.GetDatabase().StringGetAsync(userId);
-            if (string.IsNullOrEmpty(existBasket))
+            if (String.IsNullOrEmpty(existBasket))
             {
                 return Response<BasketDTO>.Fail("Basket Not Found", 404);
             }

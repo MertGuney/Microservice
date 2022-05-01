@@ -22,7 +22,7 @@ namespace FreeCourse.Services.Basket.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetBasket()
         {
             return CreateActionResultInstance(await _basketService.GetBasket(_sharedIdentityService.GetUserId));
         }
@@ -30,6 +30,7 @@ namespace FreeCourse.Services.Basket.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveOrUpdate(BasketDTO basketDTO)
         {
+            basketDTO.UserId = _sharedIdentityService.GetUserId;
             var response = await _basketService.SaveOrUpdate(basketDTO);
             return CreateActionResultInstance(response);
         }

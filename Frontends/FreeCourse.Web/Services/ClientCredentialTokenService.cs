@@ -52,7 +52,7 @@ namespace FreeCourse.Web.Services
             }
             await _clientAccessTokenCache.SetAsync("WebClientToken", newToken.AccessToken, newToken.ExpiresIn);
 
-            throw new System.NotImplementedException();
+            return newToken.AccessToken;
         }
     }
 }
