@@ -16,7 +16,7 @@ namespace FreeCourse.Web.Extensions
 
             services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();//benim için ilgili sınıflar için http client nesnesi oluştursun
             services.AddHttpClient<IIdentityService, IdentityService>();//benim için uygulama http client nesnesi oluştursun
-            
+
             services.AddHttpClient<ICatalogService, CatalogService>(opts =>
             {
                 opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
@@ -32,6 +32,10 @@ namespace FreeCourse.Web.Extensions
             services.AddHttpClient<IBasketService, BasketService>(opts =>
             {
                 opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Basket.Path}");
+            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+            services.AddHttpClient<IDiscountService, DiscountService>(opts =>
+            {
+                opts.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Discount.Path}");
             }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
         }
     }
