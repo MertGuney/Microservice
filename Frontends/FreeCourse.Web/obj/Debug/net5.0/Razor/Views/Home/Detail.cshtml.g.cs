@@ -40,8 +40,15 @@ using FreeCourse.Web.Models.Baskets;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\Views\_ViewImports.cshtml"
+using FreeCourse.Web.Models.Orders;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a8cd7f086c4d2b5e6013c8f590bee3b52582e5f", @"/Views/Home/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d1686602f95053d68d3b8a794cfa24b4689cd606", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"85623d792954c03ad3982eaaa0051272c3aa8e14", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Home_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CourseViewModel>
     #nullable disable
@@ -124,7 +131,7 @@ WriteAttributeValue("", 165, Model.StockPictureUrl, 165, 22, false);
 #line hidden
 #nullable disable
             WriteLiteral(" TL</h4>\r\n                <div class=\"d-grid\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a8cd7f086c4d2b5e6013c8f590bee3b52582e5f6878", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a8cd7f086c4d2b5e6013c8f590bee3b52582e5f7090", async() => {
                 WriteLiteral("Sepete Ekle");
             }
             );
