@@ -137,3 +137,4 @@ D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\n
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Order\Checkout.cshtml.g.cs
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Order\SuccessfulCheckout.cshtml.g.cs
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Frontends\FreeCourse.Web\obj\Debug\net5.0\Razor\Views\Order\CheckoutHistory.cshtml.g.cs
