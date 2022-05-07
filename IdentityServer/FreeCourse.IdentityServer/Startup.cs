@@ -57,7 +57,7 @@ namespace FreeCourse.IdentityServer
                 .AddAspNetIdentity<ApplicationUser>();
             //resource owner credential tipinde istek yapıldığında bu class devreye girip token dönecek
             builder.AddResourceOwnerValidator<IdentityResourceOwnerPasswordValidator>();
-
+            builder.AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>();//token exchange
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
 

@@ -39,3 +39,4 @@ D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Gateways\FreeCourse.Gateway\bin\Debu
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Gateways\FreeCourse.Gateway\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Gateways\FreeCourse.Gateway\obj\Debug\net5.0\FreeCourse.Gateway.MvcApplicationPartsAssemblyInfo.cs
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Gateways\FreeCourse.Gateway\obj\Debug\net5.0\FreeCourse.Gateway.csproj.CopyComplete
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Gateways\FreeCourse.Gateway\bin\Debug\net5.0\IdentityModel.dll

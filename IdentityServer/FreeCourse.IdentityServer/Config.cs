@@ -64,13 +64,20 @@ namespace FreeCourse.IdentityServer
                     AllowOfflineAccess=true,//refresh token aktif et
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
-                    AllowedScopes={ "gateway_fullpermission", "fake_payment_fullpermission", "order_fullpermission", "discount_fullpermission","basket_fullpermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName, "roles" },
+                    AllowedScopes={ "gateway_fullpermission",  "order_fullpermission","basket_fullpermission",IdentityServerConstants.StandardScopes.Email,IdentityServerConstants.StandardScopes.OpenId,IdentityServerConstants.StandardScopes.Profile,IdentityServerConstants.StandardScopes.OfflineAccess, IdentityServerConstants.LocalApi.ScopeName, "roles" },
                     AccessTokenLifetime=1*60*60,//1 saat
                     RefreshTokenExpiration=TokenExpiration.Absolute,// 61.gün refresh token ömrü biter
                     AbsoluteRefreshTokenLifetime=(int)(DateTime.Now.AddDays(60)-DateTime.Now).TotalSeconds,// 60 gün
                     RefreshTokenUsage=TokenUsage.ReUse, // tekrar kullan
                 },
-
+                new Client
+                {
+                    ClientId="TokenExchangeClient",
+                    ClientName="Token Exchange",
+                    ClientSecrets={new Secret("secret".Sha256())},
+                    AllowedGrantTypes=new[]{ "urn:ietf:params:oauth:grant-type:token-exchange" },
+                    AllowedScopes={"discount_fullpermission","fake_payment_fullpermission",IdentityServerConstants.StandardScopes.OpenId }
+                }
             };
     }
 }
