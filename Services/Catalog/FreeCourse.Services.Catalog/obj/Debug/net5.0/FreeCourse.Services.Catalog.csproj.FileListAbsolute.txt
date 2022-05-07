@@ -53,3 +53,15 @@ D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Automatonymous.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\GreenPipes.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\MassTransit.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\MassTransit.AspNetCoreIntegration.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\MassTransit.RabbitMqTransport.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\NewId.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\RabbitMQ.Client.dll
+D:\Udemy\MyUdemyWorks\API-5.0\Microservices\Services\Catalog\FreeCourse.Services.Catalog\bin\Debug\net5.0\System.Text.Json.dll
