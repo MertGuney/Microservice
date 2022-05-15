@@ -1,0 +1,5 @@
+İlgili Containerları volume maplediğimizde container kapanıp silinse bile ilgili image üzerinden container ayağa kaldırdığımızda kaydetmiş olduğumuz veritabanı datalarını kaybetmemiş oluruz
+
+docker-compose up -> containerları ayağa kaldırır
+ctrl+c -> containerları durdurur
+docker-compose down -> containerları siler
