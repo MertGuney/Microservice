@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OLWgMSrseAbJo+2I5jAkqHb5/IF8TIR4XKp2V3U0C/DMqOz1iqgXPaMoquBmOsnIasmn+dYYj6T0qqmvccFuMg==",
+  "dgSpecHash": "zXVOCU646WERSvSf4WZw8B6p/uoTrGd4Cw4SBkgps1W11Q1tLd0Lr4R2Jb7u0KuuWaXi/R98cNHG2GrMTfvqYw==",
   "success": true,
   "projectFilePath": "D:\\Udemy\\MyUdemyWorks\\API-5.0\\Microservices\\IdentityServer\\FreeCourse.IdentityServer\\FreeCourse.IdentityServer.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y7S5PMEFM4BRKiwifA5ozS7zD2EvYy+JxZ7ElT0jmiM6u/BYVpIVxn5o+5g/SxrkLXqBwGTzdDncq2l63uFv+g==",
+  "dgSpecHash": "VWxJDSgrsfXZReAv02scqEsJkU//eGtdoTKo2pLgRsf34vAMoSzl/cHbDyDCcjE5ZskOAHsc20v36rPFq8TGVg==",
   "success": true,
   "projectFilePath": "D:\\Udemy\\MyUdemyWorks\\API-5.0\\Microservices\\Services\\Order\\FreeCourse.Services.Order.Infrastructure\\FreeCourse.Services.Order.Infrastructure.csproj",
   "expectedPackageFiles": [

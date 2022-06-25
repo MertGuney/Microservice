@@ -3,3 +3,12 @@
 docker-compose up -> containerları ayağa kaldırır
 ctrl+c -> containerları durdurur
 docker-compose down -> containerları siler
+
+catalog->dockerfile-> EXPOSE : containerların biribiri ile haberleşmesi için 80 portunu açıyoruz
+dockerfile: ilk önce sdk'yi aldık çalışma dizini belirttik containerlarla haberleşme portu belirttik projede ortak alan olaran shared kütüphanesini kopyaladık catalog kısmını kopyaladık dotnet komutu ile projeyi restore ettik runtime'a geçirdik çalışma dizini belirttik sdk üzerinden kopyasını aldık entrypoint ile projeyi çalıştırdık.
+
+docker-compose.override dosyası içerisinde tanımladığımız api ayarlamarından environment kısmı projenin appsettings içerisindeki bilgiler üzerinden yapılır.
+
+identity docker dersi ***
+
+fotografları ya bir volume ya da bir klasöre maplememiz gerekmektedir. (bind işlemi) - container silindiğinde resimlerin silinmemesi için
