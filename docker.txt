@@ -11,4 +11,6 @@ docker-compose.override dosyası içerisinde tanımladığımız api ayarlamarı
 
 identity docker dersi ***
 
+gateway localhostlara docker-compose.override içerisindeki servis isimlerini veriyoruz. port docker üzerinde 80 portundan kalktığı için 80 portuna ayarlıyoruz
+
 fotografları ya bir volume ya da bir klasöre maplememiz gerekmektedir. (bind işlemi) - container silindiğinde resimlerin silinmemesi için

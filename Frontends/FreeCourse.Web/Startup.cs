@@ -51,7 +51,7 @@ namespace FreeCourse.Web
                 opts.Cookie.Name = "webcookie";
             });
 
-            services.AddControllersWithViews().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CourseCreateInputValidator>());//belirttiðimiz classýn bulunduðu alandaki bütün hepsini tara
+            services.AddControllersWithViews().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CourseCreateInputValidator>());//belirttiï¿½imiz classï¿½n bulunduï¿½u alandaki bï¿½tï¿½n hepsini tara
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +60,6 @@ namespace FreeCourse.Web
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-
             }
             else
             {
